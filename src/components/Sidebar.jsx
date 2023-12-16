@@ -9,7 +9,8 @@ function Sidebar({openSidebarToggle, OpenSidebar}) {
         <div className='sidebar-title'>
             <div className='sidebar-brand'>
                 <div className="logo"><img src="https://yt3.googleusercontent.com/gdh7rAvpxhpHaZONePMncpaUKJgOAllPLRv3ZurNYKmW7ctY_hrxjNSrcAAFHTQEX71KF-keGQ=s900-c-k-c0x00ffffff-no-rj" alt="logo"  /></div>
-               <span className='icn'> < FaDollarSign  className='icon_header'/> </span>Easy Money
+               <span className='icn'> < FaDollarSign  className='icon_header'/></span><b style={{fontWeight:900}}><i>Easy</i></b> <span>money</span>
+               <p style={{marginLeft:10 , color:"red"}}>creating Banking trust</p>
             </div>
             <span className='icon close_icon' onClick={OpenSidebar}>X</span>
         </div>
@@ -42,7 +43,7 @@ function Sidebar({openSidebarToggle, OpenSidebar}) {
             </li>
             <li className='sidebar-list-item'>
                 <a href="/">
-                    <BsFillGearFill className='icon'/> Setting
+                    <BsFillGearFill className='icon'/> Settings
                 </a>
             </li>
         </ul>

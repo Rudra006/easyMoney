@@ -5,7 +5,7 @@ const piedata = [
     { name: 'Group D', value: 200 },
   ];
   
-  const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
+  const COLORS = ['green', 'orange', 'aqua', 'blue'];
   
   const RADIAN = Math.PI / 180;
   const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent, index }) => {

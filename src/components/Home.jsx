@@ -77,7 +77,7 @@ function Home() {
                     <div className="btmlft2">
 
                         {/* resent transaction starts  */}
-                        <div className="btm-lft-inn"><h3>Resent Transaction </h3>
+                        <div className="btm-lft-inn"><h3>Recent Transaction </h3>
                             <div className="mp">
                                 <Resent from={"Deposit from my card"} date={"28 jan 2023"}
                                  icon={<FaCreditCard className='Resicon' style={{color:"rgb(255, 213, 0)", backgroundColor:"rgb(248, 239, 193)"}}/>}

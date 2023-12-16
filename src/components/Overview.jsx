@@ -3,12 +3,12 @@ import {  XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Lin
     from 'recharts';
 function Overview({data}){
     return(
-        <div className="midgrid2 midd "><h3>Overview </h3>
+        <div className="midd "><h3>Overview </h3>
 
-        <ResponsiveContainer width="100%" height="70%">
+        <ResponsiveContainer width="100%" height="100%">
             <LineChart
                 width={500}
-                height={300}
+                height={500}
                 data={data}
                 margin={{
                     top: 5,
@@ -17,12 +17,13 @@ function Overview({data}){
                     bottom: 5,
                 }}
             >
-                <CartesianGrid strokeDasharray="3 3" />
+                <CartesianGrid strokeDasharray="3 3" fill="#8c55fa" fillOpacity={0.3}/>
                 <XAxis dataKey="name" />
-                <YAxis />
+                <YAxis width={30}
+                />
                 <Tooltip />
                 <Legend />
-                <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
+                <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} strokeWidth={2} />
                 {/* <Line type="monotone" dataKey="uv" stroke="#82ca9d" /> */}
             </LineChart>
         </ResponsiveContainer>
